@@ -81,7 +81,7 @@ const readComment = async (req, res) => {
 };
 
 const polymorphicDelete = async (req, res) => {
-  if (req.params.delete == "image") {
+  if (req.params.deleteData == "image") {
     try {
       await model.image
         .destroy({
@@ -105,7 +105,7 @@ const polymorphicDelete = async (req, res) => {
     }
   }
 
-  if (req.params.delete == "video") {
+  if (req.params.deleteData == "video") {
     try {
       await model.video
         .destroy({

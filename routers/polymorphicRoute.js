@@ -13,14 +13,9 @@ route.get("/read-comment/:readComment", polymorphicRoute.readComment);
 
 
 // API to delete image & image comment
-route.delete("/polymorphicDelete/:delete/:id", polymorphicRoute.polymorphicDelete);
+route.delete("/polymorphicDelete/:deleteData/:id", polymorphicRoute.polymorphicDelete);
 
 
 
 module.exports = route;
 
-
-/* 
-
-
-*/ 

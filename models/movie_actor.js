@@ -32,12 +32,14 @@ module.exports = (sequelize, DataTypes) => {
 
       // Add Scopes
       scopes: {
-        agreater: {
-          where: {
-            actorId: {
-              [Op.gte]: 1,
+        agreater() {
+          return {
+            where: {
+              actorId: {
+                [Op.gte]: 1,
+              },
             },
-          },
+          };
         },
 
         mgreater: {
